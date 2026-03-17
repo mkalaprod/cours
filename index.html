@@ -2,32 +2,99 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pull</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>M18K Pull – MK</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="mon-background">
     <header class="entete">
-        <div class="logo">M18K</div>
+        <div class="header-slot">
+            <button type="button" class="logo logo-trigger" id="logo-trigger" aria-label="Ouvrir le menu" aria-expanded="false">MK</button>
+            <nav class="top-nav" id="top-nav" aria-hidden="true">
+                <a href="index.html" class="top-nav-btn" aria-label="Accueil">
+                    <svg class="icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"></path>
+                    </svg>
+                </a>
+                <a href="#search" class="top-nav-btn" aria-label="Recherche">
+                    <svg class="icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </a>
+                <button type="button" class="top-nav-btn top-nav-close" id="nav-close" aria-label="Fermer le menu">
+                    <svg class="icon icon-x" stroke="currentColor" fill="none" stroke-width="2.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <a href="login-register/index.php" class="top-nav-btn" aria-label="Profil / Connexion">
+                    <svg class="icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5ZM8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"></path>
+                    </svg>
+                </a>
+                <a href="panier/panier.php" class="top-nav-btn" aria-label="Panier">
+                    <svg class="icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </a>
+            </nav>
+        </div>
     </header>
     <main class="page">
         <section class="col-img">
             <img src="images/pull.png" alt="pull" class="img-pull">
         </section>
         <section class="col-txt">
-            <h1 class="nom">M18K Pull</h1>
-            <p class="prix">
-                <span class="prix-ancien">49.99 €</span>
-                <span class="prix-nouveau">34.99 €</span>
-            </p>
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a>
+                <span class="breadcrumb-sep">›</span>
+                <a href="#">Homme</a>
+                <span class="breadcrumb-sep">›</span>
+                <a href="#">Pulls</a>
+                <span class="breadcrumb-sep">›</span>
+                <span aria-current="page">M18K Pull</span>
+            </nav>
+            <div class="nom-row">
+                <h1 class="nom">M18K Pull</h1>
+                <button type="button" class="wishlist-btn" aria-label="Ajouter aux favoris" title="Ajouter aux favoris">
+                    <svg class="wishlist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+            </div>
+            <p class="ref">Réf. MK18K-PULL-01</p>
+            <div class="prix-row">
+                <p class="prix">
+                    <span class="prix-ancien">49.99 €</span>
+                    <span class="prix-nouveau">34.99 €</span>
+                </p>
+                <span class="badge-promo">-30 %</span>
+            </div>
+            <p class="stock">En stock</p>
+            <div class="avis-row">
+                <span class="stars" aria-label="4,2 sur 5 étoiles">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star star-half">★</span>
+                </span>
+                <a href="#avis" class="avis-link">24 avis</a>
+            </div>
             <p class="desc">
                 Plonge dans le confort ultime avec le pull M18K au design unique. Parfaits pour les nuits enneigées ou pour t'endormir dans les bras de Morphée, ce pull est un mélange d'élégance et de confort. 
-            </p> 
+            </p>
+            <dl class="fiche-produit">
+                <dt>Matière</dt>
+                <dd>100 % coton peigné</dd>
+                <dt>Coupe</dt>
+                <dd>Regular</dd>
+                <dt>Entretien</dt>
+                <dd>Machine 30 °C, repassage à l’envers</dd>
+            </dl>
+            <p class="guide-tailles">
+                <a href="#guide-tailles">Guide des tailles</a>
+            </p>
 
             <div class="rdr-radio-demo">
                 <label class="rdr-radio-option">
-                    <input type="radio" name="rdr-menu" checked />
+                    <input type="radio" name="rdr-menu" value="S" checked />
                     <div class="rdr-radio-marker">
                         <svg class="rdr-x-mark" viewBox="0 0 100 100">
                             <path class="rdr-x-path" d="M25,25 L75,75"></path>
@@ -38,7 +105,7 @@
                 </label>
 
                 <label class="rdr-radio-option">
-                    <input type="radio" name="rdr-menu" />
+                    <input type="radio" name="rdr-menu" value="M" />
                     <div class="rdr-radio-marker">
                         <svg class="rdr-x-mark" viewBox="0 0 100 100">
                             <path class="rdr-x-path" d="M25,25 L75,75"></path>
@@ -49,7 +116,7 @@
                 </label>
 
                 <label class="rdr-radio-option">
-                    <input type="radio" name="rdr-menu" />
+                    <input type="radio" name="rdr-menu" value="L" />
                     <div class="rdr-radio-marker">
                         <svg class="rdr-x-mark" viewBox="0 0 100 100">
                             <path class="rdr-x-path" d="M25,25 L75,75"></path>
@@ -60,7 +127,7 @@
                 </label>
 
                 <label class="rdr-radio-option">
-                    <input type="radio" name="rdr-menu" />
+                    <input type="radio" name="rdr-menu" value="XL" />
                     <div class="rdr-radio-marker">
                         <svg class="rdr-x-mark" viewBox="0 0 100 100">
                             <path class="rdr-x-path" d="M25,25 L75,75"></path>
@@ -74,88 +141,70 @@
                 <div class="btn-drawer transition-top">expire dans...</div>
                 <div class="btn-drawer transition-bottom">...8 heures</div>
 
-                <button class="btn" onclick="window.location.href='buy-now/buy-now.html'">
+                <button type="button" class="btn" id="btn-acheter">
                     <span class="btn-text">ACHETER</span>
                 </button>
-            </div>  
+            </div>
+            <ul class="trust-list">
+                <li>Livraison gratuite dès 50 €</li>
+                <li>Retours gratuits sous 30 jours</li>
+                <li>Paiement sécurisé</li>
+            </ul>
         </section>
     </main>
-
-    <div class="button-container">
-      <button class="button">
-        <svg
-          class="icon"
-          stroke="currentColor"
-          fill="currentColor"
-          stroke-width="0"
-          viewBox="0 0 1024 1024"
-          height="1em"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"
-          ></path>
-        </svg>
-      </button>
-      <button class="button">
-        <svg
-          class="icon"
-          stroke="currentColor"
-          fill="none"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-          height="1em"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-          ></path>
-        </svg>
-      </button>
-      <button class="button">
-        <svg
-          class="icon"
-          stroke="currentColor"
-          fill="currentColor"
-          stroke-width="0"
-          viewBox="0 0 24 24"
-          height="1em"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5ZM8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"
-          ></path>
-        </svg>
-      </button>
-
-      <button class="button">
-        <svg
-          class="icon"
-          stroke="currentColor"
-          fill="none"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          height="1em"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="9" cy="21" r="1"></circle>
-          <circle cx="20" cy="21" r="1"></circle>
-          <path
-            d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
-          ></path>
-        </svg>
-      </button>
     </div>
-    </div>
-    
+
+    <script>
+      (function () {
+        var logoTrigger = document.getElementById('logo-trigger');
+        var navClose = document.getElementById('nav-close');
+        var topNav = document.getElementById('top-nav');
+        var body = document.body;
+
+        function openNav() {
+          body.classList.add('nav-open');
+          topNav.setAttribute('aria-hidden', 'false');
+          logoTrigger.setAttribute('aria-expanded', 'true');
+        }
+        function closeNav() {
+          body.classList.remove('nav-open');
+          topNav.setAttribute('aria-hidden', 'true');
+          logoTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        if (logoTrigger) logoTrigger.addEventListener('click', openNav);
+        if (navClose) navClose.addEventListener('click', closeNav);
+
+        var btnAcheter = document.getElementById('btn-acheter');
+        if (btnAcheter) {
+          btnAcheter.addEventListener('click', function () {
+            var sizeRadio = document.querySelector('input[name="rdr-menu"]:checked');
+            var size = sizeRadio ? sizeRadio.value : 'S';
+            var payload = {
+              product_ref: 'MK18K-PULL-01',
+              product_name: 'M18K Pull',
+              size: size,
+              quantity: 1,
+              price: 34.99
+            };
+            btnAcheter.disabled = true;
+            fetch('cart/add_to_cart.php', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload)
+            })
+            .then(function (r) { return r.json(); })
+            .then(function (res) {
+              if (res && res.ok && res.redirect) {
+                window.location.href = res.redirect;
+              } else {
+                btnAcheter.disabled = false;
+              }
+            })
+            .catch(function () { btnAcheter.disabled = false; });
+          });
+        }
+      })();
+    </script>
 </body>
 </html>
